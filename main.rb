@@ -3,8 +3,8 @@
 ## This chat is for talking with my contribuito
 ## mall mark is in brazilian portuguese please translate
 ################################################
-## oi cep to procurando apis
-##
+## oi cep to procurando apis 15:25
+## cep ta ai? 18:54
 ##
 ##
 ##

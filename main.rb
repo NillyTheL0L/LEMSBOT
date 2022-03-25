@@ -6,7 +6,7 @@
 ## oi cep to procurando apis 15:25
 ## cep ta ai? 18:54
 ##
-##
+## escreve ai em cima 18:59
 ##
 ##
 ##
@@ -52,21 +52,21 @@ bot.command :botinfo do |event|
 end
 
 bot.command :joke do |event|
-	event.respond dad_jokes
+	event.respond DadJokes
 end
 
 bot.command :help do |event|
   event.respond 'Hi ' + event.user.name + ' here is my commands
-	r.help
-	r.bold (anything)
-	r.italic (anything)
-	r.off (only staffs)
-	r.eval (only staffs)
-	r.invite
-	r.search
-	r.randomnum
-	r.joke
-	r.botinfo'
+	help
+	bold (anything)
+	italic (anything)
+	off (only staffs)
+	eval (only staffs)
+	invite
+	search
+	randomnum
+	joke
+	botinfo'
 end
 
 bot.command :embed do |builder|

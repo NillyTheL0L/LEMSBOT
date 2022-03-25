@@ -29,10 +29,9 @@ require 'discordrb'
 ## gem opcional para cores no debug
 require 'colorize'
 ## gem para o comando r.joke
-
+require 'dad_jokes'
 ## gem para guardar a env do token
 require 'dotenv'
-require 'dad_jokes'
 
 
 bot = Discordrb::Commands::CommandBot.new token: 'OTU3MDE5Nzg3OTc0ODExNzQx.Yj4sIg.Xb4DIh4Hbak6mnkLihYb7geaZt8', prefix: 'exec:'
@@ -52,7 +51,7 @@ bot.command :botinfo do |event|
 end
 
 bot.command :joke do |event|
-	event.respond DadJokes
+	event.respond DadJokes.random
 end
 
 bot.command :help do |event|

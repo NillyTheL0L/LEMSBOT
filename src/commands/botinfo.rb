@@ -17,6 +17,7 @@ Id: ID
 Prefix: _
 BotOwners: NillyTheLOL#5363 (adicionem seus nicks)
 im on server **" + event.server.name + '** !**'
+					 embed.timestamp = Time.now
         end
       end
     end

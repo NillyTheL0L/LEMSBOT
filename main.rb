@@ -32,16 +32,29 @@ module Bot
 
 
 	## eval
- bot.command(:eval, help_available: false) do |event, *code|
-  break unless event.user.id == 825888178274959390 # Replace number with your ID
+bot.command(:eval, help_available: false) do |event, *code|
+  break unless event.user.id == 825888178274959390 
 
   begin
     eval code.join(' ')
   rescue StandardError
     'An error occurred 😞'
   end
- end
- 
+end
+
+ ## poweroff
+bot.command(:poweroff, help_available: false) do |event|
+  break unless event.user.id == 825888178274959390 
+
+  bot.send_message(event.channel.id, 'Bye World!')
+  exit
+end
+
+## mention
+bot.mention do |event|
+  event.respond 'Hello '+ evet.user.name + ' My name is L.E.M.S my prefix is **_** and im made in Ruby Lang !!'
+end
+
 		# on or off
 	puts 'bot ligado'.colorize(:red)
     # Run the bot

@@ -16,9 +16,8 @@ hello **" + event.user.name + "** here is my commands
 Utility: help
 Info: botinfo, userinfo
 Fun: joke
-im on server **" + event.server.name + "** !**
-
-									"
+im on server **" + event.server.name + "** !"
+					 embed.timestamp = Time.now
         end
       end
     end

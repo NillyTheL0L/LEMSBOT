@@ -14,10 +14,11 @@ hello **" + event.user.name + "** here is you infos
 
 Name: " + event.user.name + "
 Id: 
-Prefix: __exec:__
+Prefix: _____
 BotOwners: NillyTheLOL#5363 
 
 im on server **" + event.server.name + '** !**'
+					 embed.timestamp = Time.now
         end
       end
     end

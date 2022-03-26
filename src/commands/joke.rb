@@ -13,7 +13,7 @@ module Bot
 								embed.title = '\😁▸Joke'
                 embed.colour = 0xc33139
                 embed.description = DadJokes.random
-                 
+                embed.timestamp = Time.now
                   
                 end
 						end 

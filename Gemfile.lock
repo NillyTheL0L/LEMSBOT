@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorize (0.8.1)
+    configatron (4.5.1)
     dad_jokes (0.1.2)
       faraday (~> 0.13.1)
       faraday_middleware (~> 0.12.2)
@@ -52,6 +53,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorize
+  configatron
   dad_jokes
   discordrb
   dotenv

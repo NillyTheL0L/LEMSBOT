@@ -1,27 +1,3 @@
-#################################################
-############### CHAT ###########################
-## This chat is for talking with my contribuito
-## mall mark is in brazilian portuguese please translate
-################################################
-## oi cep to procurando apis 15:25
-## cep ta ai? 18:54
-##
-## escreve ai em cima 18:59
-##
-##
-##
-##
-##
-##
-##
-##
-##
-##
-##
-##
-##
-################################################
-
 require 'net/http'
 require 'uri'
 ## principal gem
@@ -54,6 +30,18 @@ module Bot
     bot.include! DiscordEvents.const_get mod
     end
 
+
+	## eval
+ bot.command(:eval, help_available: false) do |event, *code|
+  break unless event.user.id == 825888178274959390 # Replace number with your ID
+
+  begin
+    eval code.join(' ')
+  rescue StandardError
+    'An error occurred 😞'
+  end
+ end
+ 
 		# on or off
 	puts 'bot ligado'.colorize(:red)
     # Run the bot

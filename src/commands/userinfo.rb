@@ -1,21 +1,22 @@
 require 'colorize'
-puts 'comando botinfo carregado com sucesso'.colorize(:green)
+puts 'comando userinfo carregado com sucesso'.colorize(:green)
 module Bot
   module DiscordCommands
     module Informations
       extend Discordrb::Commands::CommandContainer
       # botinfo command
-      command(:botinfo) do |event|
+      command(:userinfo) do |event|
         event.channel.send_embed do |embed|
-          embed.title = '\🛠️▸botinfo'
+          embed.title = '\👨▸userinfo'
           embed.colour = 0xc33139
           embed.description = "**
-hello **" + event.user.name + "** here is my infos
+hello **" + event.user.name + "** here is you infos
 
-Name: L.E.M.S
-Id: ID
-Prefix: _
-BotOwners: NillyTheLOL#5363 (adicionem seus nicks)
+Name: " + event.user.name + "
+Id: 
+Prefix: __exec:__
+BotOwners: NillyTheLOL#5363 
+
 im on server **" + event.server.name + '** !**'
         end
       end

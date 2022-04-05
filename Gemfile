@@ -10,4 +10,3 @@ gem 'colorize'
 gem 'dotenv'
 gem 'dad_jokes'
 gem 'configatron'
-gem "rbnacl-libsodium", "~> 1.0"

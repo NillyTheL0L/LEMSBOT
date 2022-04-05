@@ -1,3 +1,4 @@
+## Some things are in portuguese sorry
 require 'net/http'
 require 'uri'
 ## principal gem
